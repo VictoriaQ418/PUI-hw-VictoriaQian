@@ -1,0 +1,334 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+ 
+html{
+    scroll-behavior: smooth;
+}
+
+/*navigation bar styling*/
+.navbar{
+    position:fixed;
+    width: 100%;
+    padding: 20px 0;  
+    background:rgb(117, 141, 228); 
+    font-family: sans-serif;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+ 
+.navbar .logo a{
+    font-size: 35px;
+    font-weight:600;
+    color:white;
+}
+
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.2s ease;
+}
+
+.navbar .menu li a:hover{
+    color: rgb(6, 3, 83);
+}
+
+/* home section part styling*/
+.home{
+    display: flex;
+    background-color:white;
+    height: 100vh;
+    color:rgb(37, 43, 171);
+    min-height: 500px;
+    font-family: sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-together{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:space-between ;
+}
+
+.home .home-content{
+    width:70%;
+}
+.home .home-content .text-1{
+    font-size: 35px;
+}
+
+.home .home-content .text-2{
+    font-size: 80px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3{
+    font-size: 50px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span{
+    color:rgb(117, 141, 228);
+    font-weight: 500;
+}
+
+.home .home-content a{
+    display:inline-block;
+    background: rgb(117, 141, 228);
+    color:white;
+    font-size:25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(11, 3, 84);
+    transition: all 0.2s ease;
+}
+
+.home .home-content a:hover{
+    color:rgb(117, 141, 228);
+    background: none;
+}
+
+.home .home-img{
+    width:30%;
+    margin-top: 50px;
+}
+
+.home .home-img img{
+    height:600px;
+    width:500px;
+    object-fit: cover;
+    border-radius:50%;
+    border: 5px solid rgb(117, 141, 228);
+}
+
+/* About Page styling*/
+section{
+    padding: 100px 0;
+}
+.about, .experiences{
+    font-family: sans-serif;
+
+}
+
+.about .title{
+    text-align: center;
+    color:rgb(4, 4, 110);
+    font-size:40px;
+    font-weight:500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.about .about-content{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:space-between ;
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+
+.about .about-content .left img{
+    height: 500px;
+    width:500px;
+    object-fit:cover;
+}
+
+.about .about-content .right{
+    width:55%;
+}
+
+.about .about-content .right .text{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span{
+    color: rgb(117, 141, 228);
+}
+
+.about .about-content .right p{
+    text-align: justify;
+    font-size: 16px;
+}
+
+.about .about-content .right a{
+    display:inline-block;
+    background: rgb(117, 141, 228);
+    color:white;
+    font-size:25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(11, 3, 84);
+    transition: all 0.2s ease;
+}
+
+.about .about-content .right a:hover{
+    color:rgb(117, 141, 228);
+    background: none;
+}
+
+ /* Experiences page styling*/
+
+ .experiences{
+    color:rgb(4, 4, 110);
+    background: white;
+ }
+
+ .experiences .title{
+    text-align: center;
+    font-size:40px;
+    font-weight:500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.experiences .experiences-content{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:space-between ;
+}
+
+.experiences .experiences-content .card{
+    width: 48%;
+    background:#f6f0f0;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.experiences .experiences-content .card:hover{
+    background: rgb(117, 141, 228);
+}
+
+.experiences .experiences-content .card .box{
+    transition: all 0.2s ease;
+}
+
+.experiences .experiences-content .card:hover .box{
+    transform: sacle(1.05);
+}
+
+.experiences .experiences-content .card .box img{
+    height:400px;
+    width:500px;
+}
+
+.experiences .experiences-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* hobbies page styling*/
+.hobbies{
+    font-family: sans-serif;
+    color:rgb(4, 4, 110);
+    background: white;
+}
+
+.hobbies .title{
+    text-align: center;
+    font-size:40px;
+    font-weight:500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.hobbies .hobbies-content{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:space-between ;
+}
+
+.hobbies .hobbies-content .card{
+    width: 48%;
+    background: #f6f0f0;
+    border-radius:6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.hobbies .hobbies-content .card:hover{
+    background: rgb(173, 187, 239);
+}
+
+.hobbies .hobbies-content .card .box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.hobbies .hobbies-content .card:hover box{
+    transform: scale(1.05);
+}
+
+.hobbies .hobbies-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 6px 0;
+}
+
+.hobbies .hobbies-content .card img{
+    height:160px;
+    width:160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgb(163, 181, 233);
+    transition: all 0.2s ease;
+}
+
+.hobbies .hobbies-content .card:hover img{
+    border-color: white;
+}
+
+/*making it responsive to Ipad Pro screen*/
+@media (max-width: 1024px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
